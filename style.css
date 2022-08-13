@@ -222,7 +222,9 @@ body{
     .continent-container .continents-ch{
         height: 100%;
     }
-
+    .next, .prev {
+        height: 30px;
+    }
     
 }
 
@@ -266,6 +268,11 @@ body{
         right: 12%;
         z-index: 0;
     }
+    .next, .prev {
+        height: 30px;
+        top: 42%;
+    }
+    
 }
 
 @media all and (max-width: 450px){
@@ -275,4 +282,9 @@ body{
     #continent-container_1{
         margin-top: 70px;
     }
+    .next, .prev {
+        top: 45%;
+        height: 15px;
+    }
+    
 }
