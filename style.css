@@ -265,7 +265,7 @@ body{
     }
 
     .continent-container .liyue{
-        right: 12%;
+        right: 0;
         z-index: 0;
     }
     .next, .prev {
