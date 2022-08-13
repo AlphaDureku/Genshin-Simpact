@@ -251,6 +251,9 @@ body{
         width: 80%;
     }
 
+    #continent-container_1{
+        margin-top: 80px;
+    }
     .continent-container{
         height: 15vh;
     }
@@ -265,3 +268,11 @@ body{
     }
 }
 
+@media all and (max-width: 450px){
+    .banner_container{
+        height: 20vh;
+    }
+    #continent-container_1{
+        margin-top: 70px;
+    }
+}
