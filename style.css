@@ -100,7 +100,7 @@ body{
     color: white;
 }
 .side-nav li a{
-
+    position: relative;
     color: black;
     display: block;
     padding: 10px 20px;
