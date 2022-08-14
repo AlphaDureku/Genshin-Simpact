@@ -11,8 +11,17 @@
     <nav class = "top-nav">
              <i class="fa-solid fa-bars fa-2xl" style="margin-left: 20px;" id = "top-menu-btn" onclick="slide()"></i>
              <a href = ""><img id = "logo" src="./assets/Simpact_Logo.png" style="height: 100%; width: 140px; background-color:#262626;"></a>
-             <a href = ""><i class="fa-solid fa-user fa-2xl" style="margin-right: 20px"></i></a>
+             <i class="fa-solid fa-user fa-2xl" style="margin-right: 20px" id = "profile-nav-btn" onclick="profile_slide()"></i>
+             
     </nav>
+    <div class = "profile-nav" id ="profile">
+        <ul>
+              <li><a href="">Profile</a></li>
+              <li><a href="">Settings</a></li>
+              <li><a href="">Give Feedback</a></li>
+              <li><a href="">Logout</a></li>
+         </ul>
+    </div>
 
     <nav class = "side-nav" id="side">
         <ul>
@@ -48,7 +57,7 @@
 
 <img class ="hutao" src="./assets/hutao.png" onclick="plays()">
 <img class ="bubble" id = "bubble" src="./assets/bubble.png">
-<audio id = "music" src = "https://docs.google.com/uc?export=download&id=1Bx8aG7ltCMeZXnB3ZFABmAnMCONHO1he" type = "audio/mp3"></audio>
+<audio id = "music" src = "./assets/music_2.mp3" type = "audio/mp3"></audio>
 
 
 

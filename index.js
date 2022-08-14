@@ -1,12 +1,22 @@
 let bubble = document.getElementById("bubble");
 let icon = document.getElementById("hutao");
 let song = document.getElementById("music");
+let j = 1;
+
+
 
 
 const plays=()=>{
    if(song.paused){
+    song.setAttribute("src", `./assets/music_${j}.mp3`);
     song.play();
+        if(j<3){
+             j++
+        }else{
+             j=1;
+        }
     bubble.setAttribute("src", "./assets/bubble_2.png");
+    console.log(j);
    }
    else{
     song.pause();
@@ -16,15 +26,22 @@ const plays=()=>{
 }
 
 
+
 //sidebar slide
-let btn = document.getElementById("top-menu-btn");
+let side_btn = document.getElementById("top-menu-btn");
 let side_nav = document.getElementById("side")
+let profile_nav = document.getElementById("profile")
 
 function slide(){
-    side_nav.classList.toggle('active')
-    btn.classList.toggle('active')
+    side_nav.classList.toggle('active');
+    side_btn.classList.toggle('active');
 }
 
+function profile_slide(){
+    profile_nav.classList.toggle('active');
+    
+    
+}
 
 
 // Banner 
@@ -36,7 +53,7 @@ function banner_slider(){
     banner.setAttribute("src", `./assets/banner_${i}.jpg`);
     if(i<6){
         i++;
-        console.log(i);
+       
     }
     else{
         i=1;
@@ -63,6 +80,6 @@ const next = () => {
         i=1;
     }
     banner.setAttribute("src", `./assets/banner_${i}.jpg`);
-    console.log(i);
+    
 
 }
