@@ -117,6 +117,8 @@ body{
 
 
 
+
+
 /*side-navigation*/
 .side-nav{
     position: fixed;
@@ -131,15 +133,12 @@ body{
     left: -330px;
     transition: .5s;
     z-index: 2;
-    
 }
 
 .side-nav.active{
     left: 0;
     height: 150vh;
 }
-
-
 .side-nav li{
     margin: 8px 0;
     position: relative;
@@ -180,7 +179,9 @@ body{
 
 
 
-/*main-banner*/
+
+
+/*starting-banner*/
 .banner_container{
     position: relative;
     width: 50%;
@@ -226,6 +227,7 @@ body{
 
 
 
+
 /*continents*/
 .continent-container{
     position: relative;
@@ -247,7 +249,6 @@ body{
     transform: scale(1.05);
     opacity: 100%;
     
-
 }
 .continent-container .continents{
     border-radius: 8px;
@@ -255,11 +256,8 @@ body{
     height: 100%;
     transition: 0.3s;
     opacity: 70%;
-
-    
-    
+     
 }
-
 .continent-container .continents-ch{
     position: absolute;
     height: 100%;
@@ -284,7 +282,7 @@ body{
 
 
 
-
+/*Media queries below*/
 
 @media all and (max-width: 1484px){
 
@@ -364,9 +362,11 @@ body{
 
     .banner_container{
         height: 20vh;
+        margin: 10% 18%;
+        width: 65%;
     }
     #continent-container_1{
-        margin-top: 70px;
+        margin-top: 45px;
     }
     .next, .prev {
         top: 45%;
