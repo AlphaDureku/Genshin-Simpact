@@ -2,7 +2,7 @@ let bubble = document.getElementById("bubble");
 let icon = document.getElementById("hutao");
 let song = document.getElementById("music");
 let j = 1;
-
+song.loop=true;
 
 
 
