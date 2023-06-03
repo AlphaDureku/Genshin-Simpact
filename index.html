@@ -1,67 +1,77 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <script src="https://kit.fontawesome.com/97b14fecde.js" crossorigin="anonymous"></script>
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <head>
+    <meta charset="UTF-8" />
+    <script
+      src="https://kit.fontawesome.com/97b14fecde.js"
+      crossorigin="anonymous"
+    ></script>
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Genshin Simpact</title>
-</head>
-<body>
-    <nav class = "top-nav">
-             <i class="fa-solid fa-bars fa-2xl" style="margin-left: 20px;" id = "top-menu-btn" onclick="slide()"></i>
-             <a href = ""><img id = "logo" src="./assets/Simpact_Logo.png" style="height: 100%; width: 140px; background-color:#262626;"></a>
-             <i class="fa-solid fa-user fa-2xl" style="margin-right: 20px" id = "profile-nav-btn" onclick="profile_slide()"></i>
-             
+  </head>
+  <body>
+    <nav class="top-nav">
+      <i
+        class="fa-solid fa-bars fa-2xl"
+        style="margin-left: 20px"
+        id="top-menu-btn"
+        onclick="slide()"
+      ></i>
+      <a href=""
+        ><img
+          id="logo"
+          src="./assets/Simpact_Logo.png"
+          style="height: 100%; width: 140px; background-color: #262626"
+      /></a>
+      <i
+        class="fa-solid fa-user fa-2xl"
+        style="margin-right: 20px"
+        id="profile-nav-btn"
+        onclick="profile_slide()"
+      ></i>
     </nav>
-    <div class = "profile-nav" id ="profile">
-        <ul>
-              <li><a href="">Profile</a></li>
-              <li><a href="">Settings</a></li>
-              <li><a href="">Give Feedback</a></li>
-              <li><a href="">Logout</a></li>
-         </ul>
+    <div class="profile-nav" id="profile">
+      <ul>
+        <li><a href="">Profile</a></li>
+        <li><a href="">Settings</a></li>
+        <li><a href="">Give Feedback</a></li>
+        <li><a href="">Logout</a></li>
+      </ul>
     </div>
 
-    <nav class = "side-nav" id="side">
-        <ul>
-            <li><a href="">Hi, Mark</a></li>
-            <li><a href="">Explore</a></li>
-            <li><a href="">Contact us</a></li>
-            <li><a href="">About us</a></li>          
-        </ul>
+    <nav class="side-nav" id="side">
+      <ul>
+        <li><a href="">Hi, Mark</a></li>
+        <li><a href="">Explore</a></li>
+        <li><a href="">Contact us</a></li>
+        <li><a href="">About us</a></li>
+      </ul>
     </nav>
 
-    <div class = "banner_container">
-        <img class ="prev" src="./assets/slide_prev.png"onclick="prev()">
-        <img class = "next" src="./assets/slide_next.png"onclick="next()">
-        <img id = "image" src=""  loading = "lazy">
-
+    <div class="banner_container">
+      <img class="prev" src="./assets/slide_prev.png" onclick="prev()" />
+      <img class="next" src="./assets/slide_next.png" onclick="next()" />
+      <img id="image" src="" loading="lazy" />
     </div>
 
-
-
-    <div class ="continent-container" id = "continent-container_1">
-        <img class = "continents" src="./assets/mondo.jpg" loading = "lazy" >
-        <img class = "continents-ch" src="./assets/mondo_ch.png">
+    <div class="continent-container" id="continent-container_1">
+      <img class="continents" src="./assets/mondo.jpg" loading="lazy" />
+      <img class="continents-ch" src="./assets/mondo_ch.png" />
     </div>
-    <div class ="continent-container">
-        <img class = "continents" src="./assets/liyue.jpg" loading = "lazy" >
-        <img class = "continents-ch liyue" src="./assets/liyue_ch.png">
+    <div class="continent-container">
+      <img class="continents" src="./assets/liyue.jpg" loading="lazy" />
+      <img class="continents-ch liyue" src="./assets/liyue_ch.png" />
     </div>
-    <div class ="continent-container">
-        <img class = "continents" src="./assets/inazuma.jpg" loading = "lazy" >
-        <img class = "continents-ch" src="./assets/inazuma_ch.png">
+    <div class="continent-container">
+      <img class="continents" src="./assets/inazuma.jpg" loading="lazy" />
+      <img class="continents-ch" src="./assets/inazuma_ch.png" />
     </div>
 
-
-<img class ="hutao" src="./assets/hutao.png" onclick="plays()">
-<img class ="bubble" id = "bubble" src="./assets/bubble.png">
-<audio id = "music" src = "./assets/music_2.mp3" type = "audio/mp3"></audio>
-
-
-
-</body>
-<link rel="stylesheet" href="style.css">
-</html> 
+    <img class="hutao" src="./assets/hutao.png" onclick="plays()" />
+    <img class="bubble" id="bubble" src="./assets/bubble.png" />
+    <audio id="music" src="./assets/music_2.mp3" type="audio/mp3"></audio>
+  </body>
+  <link rel="stylesheet" href="style.css" />
+</html>
 <script type="text/javascript" src="index.js"></script>
