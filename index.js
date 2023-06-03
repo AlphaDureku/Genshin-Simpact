@@ -1,9 +1,18 @@
 let bubble = document.getElementById("bubble");
 let icon = document.getElementById("hutao");
 let song = document.getElementById("music");
+let imageBanner = document.getElementById("image");
+let isPausedSlider = false;
 let j = 1;
 song.loop = true;
-
+const imageSrc = [
+  "./assets/banner_1.jpg",
+  "./assets/banner_2.jpg",
+  "./assets/banner_3.jpg",
+  "./assets/banner_4.jpg",
+  "./assets/banner_5.jpg",
+  "./assets/banner_6.jpg",
+];
 const plays = () => {
   if (song.paused) {
     song.setAttribute("src", `./assets/music_${j}.mp3`);
@@ -39,33 +48,37 @@ function profile_slide() {
 let banner = document.getElementById("image");
 let i = 1;
 let time = 5000;
+let currentIndex = 0;
 window.onload = banner_slider();
 function banner_slider() {
-  banner.setAttribute("src", `./assets/banner_${i}.jpg`);
-  if (i < 6) {
-    i++;
-  } else {
-    i = 1;
+  imageBanner.src = imageSrc[currentIndex];
+  currentIndex++;
+  console.log(isPausedSlider);
+  if (!isPausedSlider) {
+    setTimeout(() => {
+      banner_slider();
+    }, time);
   }
-
-  setTimeout(banner_slider, time);
 }
 
 const prev = () => {
-  clearTimeout(time);
-  i--;
-  if (i < 1) {
-    i = 6;
+  isPausedSlider = true;
+  if (currentIndex === 0) {
+    currentIndex = imageSrc.length;
   }
-  banner.setAttribute("src", `./assets/banner_${i}.jpg`);
-  console.log(i);
+  currentIndex--;
+  console.log(currentIndex);
+  imageBanner.src = imageSrc[currentIndex];
+  isPausedSlider = false;
 };
 
 const next = () => {
-  clearTimeout(time);
-  i++;
-  if (i > 6) {
-    i = 1;
+  isPausedSlider = true;
+  currentIndex++;
+  if (currentIndex > 5) {
+    currentIndex = 0;
   }
-  banner.setAttribute("src", `./assets/banner_${i}.jpg`);
+  imageBanner.src = imageSrc[currentIndex];
+
+  isPausedSlider = false;
 };
